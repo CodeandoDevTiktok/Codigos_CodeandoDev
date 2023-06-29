@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="static/index.css">
+</head>
+<body>
+    <h3>Bienvenido al chat de Codeando.dev</h3>
+    <div class="chatbox" id="chatbox">
+        {% for message in mensajes %}
+            <div class="message {{ message.role }}">
+                <div class="name-time">{{ message.name }} ({{ message.time }}):</div>
+                <div>
+                    {{ message.content }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <form id="chat-form" action="/" method="POST">
+        <input type="text" name="mensaje" placeholder="Escribe tu mensaje..." autocomplete="off">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        // Hacer scroll automático hacia el último mensaje
+        var chatbox = document.getElementById('chatbox');
+        chatbox.scrollTop = chatbox.scrollHeight;
+    </script>
+</body>
+</html>
