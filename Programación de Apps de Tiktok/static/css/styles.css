@@ -1,0 +1,305 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.title{
+    text-align: center;
+}
+
+header {
+    align-items: center;
+    padding: 10px;
+}
+
+header .transition-button {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+header h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1d4769;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+header h4 {
+    font-size: 15px;
+    color: #3baeff;
+    margin-block-end: 0.5em;
+}
+
+.main {
+    padding: 15px;
+}
+
+.diagram-container {
+    text-align: center;
+    /* Aquí podrías incluir el diagrama como una imagen o SVG */
+}
+
+.question-container {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+
+
+.quiz-status {
+    display: flex; /* Usa flexbox para alinear los elementos internos */
+    justify-content: space-between; /* Espacia los elementos uniformemente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    padding: 18px 18px 0px 18px; /* Un poco de padding para asegurar espacio alrededor de los elementos */
+}
+
+/* Ajustes para el contenedor que incluye el tema y la pregunta */
+.quiz-status > div:first-child {
+    flex-grow: 1; /* Permite que este contenedor crezca y ocupe el espacio disponible */
+}
+
+/* Estilos para el temporizador */
+.timer {
+    display: flex; /* Alinea horizontalmente el icono y el tiempo */
+    align-items: center; /* Asegura que el icono y el tiempo estén centrados verticalmente */
+    justify-content: center; /* Centra los elementos dentro del temporizador */
+}
+
+.timer-icon {
+    font-size: 1.5em; /* Tamaño del ícono del temporizador */
+    margin-right: 0.5em; /* Espacio entre el ícono y el texto */
+}
+
+.timer-time {
+    font-weight: bold; /* Texto en negrita para el tiempo */
+    font-size: 1.5em; /* Ajusta el tamaño del texto del tiempo si es necesario */
+    color: #1d4769;
+}
+
+
+
+
+
+
+
+/* ... Timer ... */
+
+#progress-bar-container {
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%; /* Empieza en 0% */
+    background-color: #3baeff;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+
+/* Answers & Votes */
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    border: 2px solid #d9d9d9; /* Borde más sutil */
+    margin: 10px 20px 10px 20px; /* Más espacio entre las respuestas */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra ligera */
+    border-radius: 10px; /* Bordes más redondeados */
+    background-color: #f7f7f7; /* Fondo más claro */
+}
+
+.answers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two columns of equal width */
+    grid-gap: 15px; /* Add some space between the grid items */
+    padding-bottom: 15px;
+}
+
+
+/* Ajustar los estilos de la letra y el texto de la respuesta */
+.answer .letter {
+    color: black;
+    font-size: 1.5em; /* Letra más grande */
+    margin-bottom: 10px; /* Espacio entre la letra y los votos */
+}
+
+/* Estilos para la información de los votos */
+.votes-info {
+    background: #ffffff; /* Fondo blanco para los votos */
+    border-radius: 15px; /* Bordes redondeados para el contenedor de votos */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 5px 10px; /* Padding interior para los votos */
+    margin-top: 10px; /* Espacio entre el botón y los votos */
+    font-size: 0.8em; /* Tamaño de fuente ajustado */
+    color: #333; /* Color de texto oscuro para mejor contraste */
+}
+
+/* Asegúrate de que los cambios sean responsivos */
+@media (max-width: 768px) {
+    .answers-container {
+        flex-direction: column;
+    }
+
+    .answer {
+        width: 80%; /* Ocupar el ancho completo en dispositivos móviles */
+        margin: 15px 15px 15px 15px; /* Más espacio entre las respuestas */
+    }
+}
+
+/* Ranking */
+/*
+.ranking {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ranking-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 20px 30px 20px 30px;
+    background: #ffffff;
+}
+
+
+.ranking-photo {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-right: 10px;
+}
+
+.ranking-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.ranking-name {
+    font-weight: bold;
+}
+
+.ranking-nick {
+    font-style: italic;
+}
+
+.ranking-exp {
+    font-size: 0.9em;
+    color: #666;
+}
+*/
+.ranking-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    /*border:2px solid #d9d9d9;*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    width: 500px; /* o un ancho fijo, como 300px */
+    min-width: 500px;
+}
+
+
+/* Contenedor del ranking */
+.ranking-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre elementos */
+    background: #f4f4f4;
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Título del ranking en el pop-up */
+.ranking-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#1d4769;
+}
+
+/* Encabezado del ranking */
+.ranking-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d9d9d9; /* Línea que separa el encabezado del contenido */
+}
+
+.ranking-header > div {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Entrada de ranking */
+.ranking-entry {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    justify-content: space-between; /* Asegura que los elementos estén distribuidos equitativamente */
+    gap: 10px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px; /* Bordes redondeados para cada entrada */
+    margin: 10px;
+}
+
+.ranking-info {
+    flex-grow: 1; /* Permite que el contenedor crezca pero no más allá de su contenido */
+    min-width: 0; /* Permite que el contenedor se encoja si es necesario */
+}
+
+/* Posición */
+.ranking-position {
+    font-weight: bold;
+    color: #007bff; /* Color de la posición */
+}
+
+/* Foto */
+.ranking-photo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Esto hace que la imagen sea un círculo */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+}
+
+/* Nombre */
+.ranking-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px; /* Asegúrate de ajustar según el ancho que desees */
+}
+
+/* Puntos de experiencia */
+.ranking-exp {
+    font-weight: bold;
+    color: #555;
+    white-space: nowrap;
+}
