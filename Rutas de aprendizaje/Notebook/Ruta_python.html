@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Presentación de Python</title>
+    <!-- Enlaces a Reveal.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/black.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.js"></script>
+
+    <!-- Enlaces a CodeMirror -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/codemirror.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.59.4/mode/python/python.js"></script>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Sección 1: Lógica de Programación -->
+            <section>
+                <h2>Lógica de Programación</h2>
+                <textarea id="code1"> 
+                    Lógica de programación
+                    1. Entradas
+                    2. Salidas
+                    3. Restricciones
+                    4. Propósito/Objetivo
+
+                    # Ejemplo: Calculadora
+                    # Entradas: números 0 al 9, operación: +, -, etc.
+                    # Salidas: impresión resultado
+                    # Restricciones: máximos dígitos
+                    # Objetivo: imprimir respuesta
+                </textarea>
+            </section>
+
+            <!-- Sección 2: Variables y Tipos de Datos -->
+            <section>
+                <h2>Variables y Tipos de Datos</h2>
+                <textarea id="code2"> 
+# Variables
+numero = 45  # Integer
+decimal = 18.9  # Decimal
+texto = 'hola'  # String
+logica = True  # Bool
+
+# Validación de tipo de datos
+print(type(decimal))
+print(type(logica))
+print(type(texto))
+                </textarea>
+            </section>
+
+            <!-- Sección 3: Listas y Métodos de Listas -->
+            <section>
+                <h2>Listas y Métodos de Listas</h2>
+                <textarea id="code3"> 
+# Listas
+bicicleta = ["trek", "especial", "campo"]
+
+# Operaciones con listas
+bicicleta.append("montañera")
+bicicleta.insert(1, "xtreme")
+bicicleta.remove("trek")
+bicicleta.sort()
+
+print(bicicleta)
+                </textarea>
+            </section>
+        </div>
+    </div>
+
+    <!-- Configuración de Reveal.js y CodeMirror -->
+    <script>
+        Reveal.initialize();
+        CodeMirror.fromTextArea(document.getElementById('code1'), {
+            mode: 'python',
+            lineNumbers: true
+        });
+        CodeMirror.fromTextArea(document.getElementById('code2'), {
+            mode: 'python',
+            lineNumbers: true
+        });
+        CodeMirror.fromTextArea(document.getElementById('code3'), {
+            mode: 'python',
+            lineNumbers: true
+        });
+    </script>
+</body>
+</html>
