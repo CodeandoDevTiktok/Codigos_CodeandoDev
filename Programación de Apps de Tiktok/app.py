@@ -17,11 +17,11 @@ from utils import convertir_imagen_a_base64
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app, async_mode='threading')
-cliente_tiktok = TikTokLiveClient("@yiproblox1")
+cliente_tiktok = TikTokLiveClient("@angelo.gamer")
 
 # Funciones auxiliares
 def cargar_preguntas():
-    with open('C:/Python/App_tiktok/Quiz/Old/v3/static/js/questions.json', encoding='utf-8') as file:
+    with open('./static/js/questions.json', encoding='utf-8') as file:
         return json.load(file)
 
 questions = cargar_preguntas()
@@ -166,5 +166,6 @@ def obtener_siguiente_pregunta():
         return jsonify(pregunta_seleccionada)
 
 if __name__ == '__main__':
+    print("Inicio")
     conectar_cliente_tiktok()
     socketio.run(app, debug=True)

@@ -1,7 +1,7 @@
 from TikTokLive import TikTokLiveClient
 from TikTokLive.types.events import CommentEvent
 
-cliente = TikTokLiveClient("@lttqzd2002")
+cliente = TikTokLiveClient("@angelo.gamer")
 
 async def comentarios(event: CommentEvent):
     print(f"COMENTARIO: {event.user.nickname} --> {event.comment}")
