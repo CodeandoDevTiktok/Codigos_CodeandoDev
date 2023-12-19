@@ -11,7 +11,7 @@ import json
 import random
 import time
 
-from data import usuarios, votes, selected_questions, voting_open, debe_correr_cliente_tiktok, cliente_tiktok_conectado
+from data import usuarios, votes, selected_questions, voting_open, debe_correr_cliente_tiktok, cliente_tiktok_conectado, tema_evaluar
 from utils import convertir_imagen_a_base64
 
 app = Flask(__name__)
@@ -138,7 +138,7 @@ def desconectar_cliente_tiktok():
 
 @app.route('/')
 def inicio():
-    tema = "Python basico"
+    tema = tema_evaluar
     pregunta_seleccionada, numero_pregunta, inicio_pregunta = seleccionar_pregunta_aleatoria(tema)
     total_preguntas = len(questions[tema])
     respuesta_correcta = pregunta_seleccionada['correcta']
@@ -154,7 +154,7 @@ def detener_votacion():
 @app.route('/get_next_question')
 def obtener_siguiente_pregunta():
     conectar_cliente_tiktok()
-    tema = "Python basico"
+    tema = tema_evaluar
     pregunta_seleccionada, numero_pregunta, _ = seleccionar_pregunta_aleatoria(tema)
 
     if pregunta_seleccionada is None:

@@ -8,6 +8,7 @@ let totalTimeInSeconds = 10; // Tiempo total en segundos
 let currentTime = totalTimeInSeconds;
 let rankingTemporal = [];
 const SOCKET_URL = 'http://127.0.0.1:5000';
+//const SOCKET_URL = 'http://172.16.5.4:5000';
 const UPDATE_INTERVAL = 1000; // Intervalo de actualización del temporizador en milisegundos
 const RANKING_DELAY = 3000; // Retraso antes de mostrar el ranking
 const RANKING_DISPLAY_TIME = 5000; //

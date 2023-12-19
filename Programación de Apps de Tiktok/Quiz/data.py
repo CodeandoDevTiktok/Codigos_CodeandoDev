@@ -1,5 +1,5 @@
 #data.py
-
+tema_evaluar = "Estacion1"
 debe_correr_cliente_tiktok = True
 cliente_tiktok_conectado = False
 
