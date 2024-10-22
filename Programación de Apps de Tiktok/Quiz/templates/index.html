@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+
+</head>
+<body>
+    <div class="app-container" data-question-number="{{ question_number }}" data-total-questions="{{ total_questions }}">
+
+        <header class="quiz-header">
+            <div class="quiz-status">
+                <div>
+                    <h4>{{ tema.title() }}</h4>
+                    <h2>Pregunta {{ question_number }}/{{ total_questions }}</h2>
+                </div>
+                
+                <div class="timer">
+                    <span class="timer-icon">⏱</span>
+                    <span class="timer-time">10s</span>
+                </div>
+                
+            </div>
+        </header>
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <main>
+            <div class="diagram-container">
+                <!-- Insertar imagen o SVG del diagrama aquí -->
+            </div>
+            <div class="question-container" data-correct-answer="{{ correcta }}">
+                <p>Pregunta: {{ question['pregunta'] }}</p>
+            </div>
+            <div class="answers-container">
+                {% for respuesta in question['respuestas'] %}
+                <div class="answer" data-correct="{{ loop.index == correcta }}">
+                    <span class="letter">{{ loop.index }}</span>
+                    <span class="text">{{ respuesta }}</span>
+                    <p class="vote-counter" id="vote-counter-{{ loop.index }}">Votos: 0 (0%)</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div id="rankingPopup" class="ranking-popup" style="display:none;">
+                <h2 class="ranking-title">Ranking</h2>
+                <div id="ranking-container" class="ranking">
+                    <!-- Genera ranking -->
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+</body>
+</html>

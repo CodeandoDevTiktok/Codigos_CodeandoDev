@@ -1,0 +1,420 @@
+
+{
+    "Flask en Python": [
+        {
+            "pregunta": "¿Qué es Flask en Python?",
+            "respuestas": ["Un framework de desarrollo web", "Un lenguaje de programación", "Una base de datos", "Una biblioteca de gráficos"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cuál es el propósito principal de Flask?",
+            "respuestas": ["Desarrollo de aplicaciones móviles", "Desarrollo de aplicaciones de escritorio", "Desarrollo web", "Inteligencia artificial"],
+            "correcta": 3
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para crear una ruta en una aplicación Flask?",
+            "respuestas": ["@ruta", "@app.route", "@crear_ruta", "@nueva_ruta"],
+            "correcta": 2
+        },
+        {
+            "pregunta": "¿Qué extensión se utiliza comúnmente para renderizar plantillas HTML en Flask?",
+            "respuestas": [".htmlrender", ".flaskhtml", ".template", ".html"],
+            "correcta": 4
+        },
+        {
+            "pregunta": "¿Cuál es la función de renderizado de plantillas en Flask?",
+            "respuestas": ["renderizar_template()", "mostrar_plantilla()", "cargar_plantilla()", "renderizar()"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cómo se inicia una aplicación Flask?",
+            "respuestas": ["flask run", "python start.py", "app.run()", "flask start"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Qué método se utiliza para agregar una URL a una vista en Flask?",
+            "respuestas": ["add_url()", "url_for()", "crear_url()", "nueva_url()"],
+            "correcta": 2
+        },
+        {
+            "pregunta": "¿Cuál es el motor de plantillas predeterminado en Flask?",
+            "respuestas": ["Jinja2", "Django", "Mako", "HTML"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Qué módulo se utiliza para manejar formularios en Flask?",
+            "respuestas": ["forms.py", "formularios.py", "form.py", "wtforms.py"],
+            "correcta": 4
+        },
+        {
+            "pregunta": "¿Qué método se utiliza para redirigir a otra página en Flask?",
+            "respuestas": ["redirigir()", "redirect()", "navegar()", "cambiar_página()"],
+            "correcta": 2
+        },
+        {
+            "pregunta": "¿Cuál es el objeto principal en una aplicación Flask?",
+            "respuestas": ["app", "flask", "web", "server"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Qué extensión se utiliza para manejar autenticación de usuarios en Flask?",
+            "respuestas": ["flask-auth", "flask-login", "auth.py", "user-auth"],
+            "correcta": 2
+        },
+        {
+            "pregunta": "¿Cuál es el comando para crear una nueva aplicación Flask?",
+            "respuestas": ["flask new", "flask create", "flask init", "flask startapp"],
+            "correcta": 3
+        },
+        {
+            "pregunta": "¿Qué módulo se utiliza para manejar bases de datos en Flask?",
+            "respuestas": ["database.py", "flask-db", "sqlalchemy", "db-handler"],
+            "correcta": 3
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para definir modelos de datos en Flask-SQLAlchemy?",
+            "respuestas": ["create_model()", "define_model()", "model()", "db.Model"],
+            "correcta": 4
+        },
+        {
+            "pregunta": "¿Qué extensión se utiliza para el manejo de sesiones en Flask?",
+            "respuestas": ["session.py", "flask-session", "sesiones.py", "flask-sessions"],
+            "correcta": 2
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para agregar middleware en Flask?",
+            "respuestas": ["add_middleware()", "middleware()", "use_middleware()", "app.before_request()"],
+            "correcta": 4
+        },
+        {
+            "pregunta": "¿Qué función se utiliza para manejar errores 404 en Flask?",
+            "respuestas": ["error_404()", "not_found()", "handle_404()", "abort(404)"],
+            "correcta": 4
+        },
+        {
+            "pregunta": "¿Cuál es el objeto principal para realizar pruebas en una aplicación Flask?",
+            "respuestas": ["app.testing", "flask-test", "test-app", "app.test_client()"],
+            "correcta": 4
+        },
+        {
+            "pregunta": "¿Cómo se configura la base de datos en una aplicación Flask?",
+            "respuestas": ["configurar_db()", "db.config()", "app.config['DATABASE']", "app.database()"],
+            "correcta": 3
+        }
+    ],
+    "Python basico": [
+      {
+          "pregunta": "¿Qué es Python?",
+          "respuestas": ["Un lenguaje de programación", "Un animal", "Un lugar en Europa", "Un tipo de serpiente"],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Cuál es la sintaxis correcta para imprimir 'Hola, mundo!' en Python?",
+          "respuestas": ["print('Hola, mundo!')", "echo('Hola, mundo!')", "console.log('Hola, mundo!')", "printf('Hola, mundo!')"],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Cuál es el operador para la multiplicación en Python?",
+          "respuestas": ["*", "+", "-", "/"],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Cuál es la función que se utiliza para obtener la longitud de una lista en Python?",
+          "respuestas": ["size()", "length()", "len()", "count()"],
+          "correcta": 3
+      },
+      {
+          "pregunta": "¿Cuál de los siguientes tipos de datos es mutable en Python?",
+          "respuestas": ["int", "float", "str", "list"],
+          "correcta": 4
+      },
+      {
+          "pregunta": "¿Qué palabra clave se utiliza para definir una función en Python?",
+          "respuestas": ["function", "def", "define", "func"],
+          "correcta": 2
+      },
+      {
+          "pregunta": "¿Cuál es el resultado de 2 + 3 en Python?",
+          "respuestas": ["5", "6", "4", "2"],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Cómo se comenta una línea en Python?",
+          "respuestas": ["// Esto es un comentario", "# Esto es un comentario", "// Esto es una línea de código", "/* Esto es un comentario */"],
+          "correcta": 2
+      },
+      {
+          "pregunta": "¿Cuál es el tipo de dato para representar números enteros en Python?",
+          "respuestas": ["int", "float", "str", "char"],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Cuál es la función que se utiliza para ingresar datos desde el teclado en Python?",
+          "respuestas": ["input()", "read()", "get_input()", "keyboard()"],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Cuál es el operador de asignación en Python?",
+          "respuestas": ["=", "==", "=>", ":="],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Qué es una lista en Python?",
+          "respuestas": ["Una estructura de control", "Un tipo de dato numérico", "Una secuencia ordenada de elementos", "Un bucle"],
+          "correcta": 3
+      },
+      {
+          "pregunta": "¿Cuál es el valor booleano resultante de la expresión 3 > 5 en Python?",
+          "respuestas": ["Verdadero", "Falso"],
+          "correcta": 2
+      },
+      {
+          "pregunta": "¿Qué función se utiliza para convertir un número decimal en un entero en Python?",
+          "respuestas": ["int()", "float()", "str()", "decimal()"],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Cuál es el resultado de 'Hola' + 'Mundo' en Python?",
+          "respuestas": ["Hola Mundo", "HolaMundo", "Hola + Mundo", "Error"],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Cuál es el bucle que permite recorrer una lista en Python?",
+          "respuestas": ["while", "do-while", "for", "loop"],
+          "correcta": 3
+      },
+      {
+          "pregunta": "¿Cuál es el operador lógico 'y' en Python?",
+          "respuestas": ["&&", "and", "||", "or"],
+          "correcta": 2
+      },
+      {
+          "pregunta": "¿Cuál es la función que permite obtener el valor absoluto de un número en Python?",
+          "respuestas": ["abs()", "absolute()", "value()", "num_abs()"],
+          "correcta": 1
+      },
+      {
+          "pregunta": "¿Qué es un diccionario en Python?",
+          "respuestas": ["Una lista ordenada de elementos", "Una colección de elementos únicos", "Una estructura de control", "Un bucle"],
+          "correcta": 2
+      },
+      {
+          "pregunta": "¿Cuál es el operador de comparación que se utiliza para verificar si dos valores son iguales en Python?",
+          "respuestas": ["=", "==", ">", "<"],
+          "correcta": 2
+      }
+    ],
+    "Estructura de datos": [
+        {
+            "pregunta": "¿Qué es una lista en Python?",
+            "respuestas": ["Una estructura de datos lineal", "Un tipo de bucle", "Un operador lógico", "Un tipo de diccionario"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para agregar un elemento al final de una lista en Python?",
+            "respuestas": [".append()", ".add()", ".insert()", ".extend()"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Qué estructura de datos se utiliza para almacenar un conjunto de elementos únicos en Python?",
+            "respuestas": ["Lista", "Tupla", "Conjunto", "Diccionario"],
+            "correcta": 3
+        },
+        {
+            "pregunta": "¿Cuál es la característica principal de una tupla en Python?",
+            "respuestas": ["Puede ser modificada después de su creación", "Puede contener elementos de tipos diferentes", "Es inmutable", "Puede tener duplicados"],
+            "correcta": 3
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para eliminar un elemento específico de una lista en Python?",
+            "respuestas": [".remove()", ".pop()", ".delete()", ".discard()"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Qué estructura de datos se utiliza para almacenar pares clave-valor en Python?",
+            "respuestas": ["Lista", "Tupla", "Conjunto", "Diccionario"],
+            "correcta": 4
+        },
+        {
+            "pregunta": "¿Cuál es el operador utilizado para acceder a un elemento de una lista o tupla en Python?",
+            "respuestas": ["+", "-", "*", "[]"],
+            "correcta": 4
+        },
+        {
+            "pregunta": "¿Qué estructura de datos lineal se caracteriza por seguir el principio 'último en entrar, primero en salir' (LIFO)?",
+            "respuestas": ["Cola", "Pila", "Lista enlazada", "Conjunto"],
+            "correcta": 2
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para invertir el orden de los elementos en una lista en Python?",
+            "respuestas": [".reverse()", ".sort()", ".flip()", ".rotate()"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para obtener la longitud de una cadena en Python?",
+            "respuestas": [".length()", ".count()", ".size()", ".len()"],
+            "correcta": 4
+        },
+        {
+            "pregunta": "¿Cuál es el tipo de estructura de datos que se utiliza para implementar una cola en Python?",
+            "respuestas": ["Lista", "Tupla", "Cola", "Pila"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para eliminar y devolver el último elemento de una lista en Python?",
+            "respuestas": [".pop()", ".remove()", ".delete()", ".discard()"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cuál es el tipo de estructura de datos que se utiliza para implementar una pila en Python?",
+            "respuestas": ["Lista", "Tupla", "Cola", "Pila"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para agregar varios elementos al final de una lista en Python?",
+            "respuestas": [".add()", ".extend()", ".append()", ".insert()"],
+            "correcta": 2
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para contar cuántas veces aparece un elemento en una lista en Python?",
+            "respuestas": [".count()", ".find()", ".search()", ".occurrences()"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para ordenar una lista en Python?",
+            "respuestas": [".sort()", ".order()", ".arrange()", ".organize()"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Qué estructura de datos lineal se caracteriza por seguir el principio 'primero en entrar, primero en salir' (FIFO)?",
+            "respuestas": ["Cola", "Pila", "Lista enlazada", "Conjunto"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para agregar un elemento en una posición específica de una lista en Python?",
+            "respuestas": [".add()", ".append()", ".insert()", ".extend()"],
+            "correcta": 3
+        },
+        {
+            "pregunta": "¿Qué estructura de datos se utiliza para almacenar una secuencia de elementos ordenados y accesibles por su índice en Python?",
+            "respuestas": ["Lista", "Tupla", "Conjunto", "Diccionario"],
+            "correcta": 1
+        },
+        {
+            "pregunta": "¿Cuál es el método utilizado para copiar una lista en Python sin modificar la original?",
+            "respuestas": [".copy()", ".clone()", ".duplicate()", ".replicate()"],
+            "correcta": 1
+        }
+    ],
+    "Estacion1": [
+        {
+        "pregunta": "¿Qué es una variable en Python?",
+        "respuestas": ["Un tipo de estructura de datos", "Un contenedor para almacenar valores de datos", "Una función especial", "Una herramienta de depuración"],
+        "correcta": 2
+        },
+        {
+        "pregunta": "¿Cuál es el tipo de dato para almacenar texto en Python?",
+        "respuestas": ["int", "float", "string", "list"],
+        "correcta": 3
+        },
+        {
+        "pregunta": "¿Qué instrucción se usa en Python para leer una entrada del usuario?",
+        "respuestas": ["input()", "read()", "scan()", "get()"],
+        "correcta": 1
+        },
+        {
+        "pregunta": "En Python, ¿qué operador se utiliza para comparar dos valores?",
+        "respuestas": ["=", "==", ":", "->"],
+        "correcta": 2
+        },
+        {
+        "pregunta": "¿Cómo se declara un comentario en Python?",
+        "respuestas": ["// comentario", "# comentario", "/* comentario */", "<!-- comentario -->"],
+        "correcta": 2
+        },
+        {
+        "pregunta": "¿Qué tipo de dato se utiliza en Python para almacenar números decimales?",
+        "respuestas": ["decimal", "double", "float", "real"],
+        "correcta": 3
+        },
+        {
+        "pregunta": "¿Qué función se utiliza para imprimir un mensaje en la consola en Python?",
+        "respuestas": ["echo()", "print()", "log()", "output()"],
+        "correcta": 2
+        }
+    ],
+    "Estacion2": [
+        {
+        "pregunta": "¿Cómo se crea una lista vacía en Python?",
+        "respuestas": ["list = []", "list = ()", "list = {}", "list = '[]'"],
+        "correcta": 1
+        },
+        {
+        "pregunta": "¿Qué método añade un elemento al final de una lista en Python?",
+        "respuestas": ["append()", "add()", "insert()", "push()"],
+        "correcta": 1
+        },
+        {
+        "pregunta": "¿Qué error se produce al intentar acceder a un índice que no existe en una lista?",
+        "respuestas": ["IndexError", "SyntaxError", "TypeError", "KeyError"],
+        "correcta": 1
+        },
+        {
+        "pregunta": "¿Cómo se elimina el último elemento de una lista en Python?",
+        "respuestas": ["remove()", "pop()", "delete()", "cut()"],
+        "correcta": 2
+        },
+        {
+        "pregunta": "¿Qué método se utiliza para ordenar los elementos de una lista de forma ascendente?",
+        "respuestas": ["sort()", "sorted()", "order()", "arrange()"],
+        "correcta": 1
+        },
+        {
+        "pregunta": "¿Qué sucede si se utiliza el método remove() con un valor que no está en la lista?",
+        "respuestas": ["Nada", "Se elimina el primer elemento", "Se añade el valor a la lista", "ValueError"],
+        "correcta": 4
+        },
+        {
+        "pregunta": "¿Cómo se puede concatenar dos listas en Python?",
+        "respuestas": ["Usando el operador +", "Con el método extend()", "Ambas respuestas son correctas", "Con el método join()"],
+        "correcta": 3
+        }
+    ],
+    "Estacion3": [
+    {
+    "pregunta": "¿Cuáles son los dos valores booleanos en Python?",
+    "respuestas": ["True y False", "Yes y No", "1 y 0", "On y Off"],
+    "correcta": 1
+    },
+    {
+    "pregunta": "¿Qué operador se utiliza para verificar la igualdad en una declaración if?",
+    "respuestas": ["=", "==", "===", "equals"],
+    "correcta": 2
+    },
+    {
+    "pregunta": "¿Cómo se inicia una declaración if anidada en Python?",
+    "respuestas": ["Con otro if después de un else", "Dentro de un for loop", "Antes de un if principal", "En una función separada"],
+    "correcta": 1
+    },
+    {
+    "pregunta": "¿Qué sucede si la condición en una declaración if es False?",
+    "respuestas": ["Se ejecuta el código dentro del if", "Se salta el código dentro del if", "Python arroja un error", "El programa se detiene"],
+    "correcta": 2
+    },
+    {
+    "pregunta": "¿Qué palabra clave se utiliza para verificar una condición adicional si la primera condición en un if es falsa?",
+    "respuestas": ["else", "elseif", "elif", "when"],
+    "correcta": 3
+    },
+    {
+    "pregunta": "¿Puede un bloque if tener múltiples declaraciones elif?",
+    "respuestas": ["No, solo una", "Sí, cualquier cantidad", "Sí, pero solo dos", "No, if no puede tener elif"],
+    "correcta": 2
+    },
+    {
+    "pregunta": "¿Qué tipo de errores son comunes en las declaraciones if anidadas?",
+    "respuestas": ["Errores de sintaxis", "Errores de tiempo de ejecución", "Errores de lógica", "Todos los anteriores"],
+    "correcta": 4
+    }
+    ]
+}
